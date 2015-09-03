@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 {{CompanyName}}. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../app/code/Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="{{companyName}}::base" title="{{CompanyName}}" module="{{CompanyName}}_{{ModuleName}}" sortOrder="90" resource="{{CompanyName}}_{{ModuleName}}::sample"/>
+        <add id="{{companyName}}_{{moduleName}}::{{moduleName}}" title="Items" module="{{CompanyName}}_{{ModuleName}}" sortOrder="10" parent="{{companyName}}::base" action="{{companyName}}_{{moduleName}}/items/" resource="{{CompanyName}}_{{ModuleName}}::items"/>
+    </menu>
+</config>

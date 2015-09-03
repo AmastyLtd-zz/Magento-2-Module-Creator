@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 {{CompanyName}}. All rights reserved.
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="left">
+            <block class="{{CompanyName}}\{{ModuleName}}\Block\Adminhtml\Items\Edit\Tabs" name="{{companyName}}_{{moduleName}}_items_edit_tabs">
+                <block class="{{CompanyName}}\{{ModuleName}}\Block\Adminhtml\Items\Edit\Tab\Main" name="{{companyName}}_{{moduleName}}_items_edit_tab_main"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">main_section</argument>
+                    <argument name="block" xsi:type="string">{{companyName}}_{{moduleName}}_items_edit_tab_main</argument>
+                </action>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="{{CompanyName}}\{{ModuleName}}\Block\Adminhtml\Items\Edit" name="{{moduleName}}_items_edit"/>
+        </referenceContainer>
+    </body>
+</page>
