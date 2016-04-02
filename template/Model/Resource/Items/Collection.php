@@ -3,9 +3,9 @@
  * Copyright © 2015 {{CompanyName}}. All rights reserved.
  */
 
-namespace {{CompanyName}}\{{ModuleName}}\Model\Resource\Items;
+namespace {{CompanyName}}\{{ModuleName}}\Model\ResourceModel\Items;
 
-class Collection extends \Magento\Framework\Model\Resource\Db\Collection\AbstractCollection
+class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {
     /**
      * Define resource model
@@ -14,6 +14,6 @@ class Collection extends \Magento\Framework\Model\Resource\Db\Collection\Abstrac
      */
     protected function _construct()
     {
-        $this->_init('{{CompanyName}}\{{ModuleName}}\Model\Items', '{{CompanyName}}\{{ModuleName}}\Model\Resource\Items');
+        $this->_init('{{CompanyName}}\{{ModuleName}}\Model\Items', '{{CompanyName}}\{{ModuleName}}\Model\ResourceModel\Items');
     }
 }
